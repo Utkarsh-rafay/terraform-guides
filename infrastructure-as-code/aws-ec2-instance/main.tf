@@ -29,7 +29,7 @@ resource "aws_instance" "ubuntu-1" {
   availability_zone = var.aws_region_az
 
   tags = {
-    Name = "avinash-terraform"
+    Name = "utkarsh-terraform"
   }
   depends_on = [aws_instance.ubuntu]
 }
