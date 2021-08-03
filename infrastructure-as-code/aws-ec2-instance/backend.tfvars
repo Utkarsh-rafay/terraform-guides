@@ -1,1 +1,1 @@
-key = "terraform/states/terra-state-t"
+key = "infra-test-terraform"
