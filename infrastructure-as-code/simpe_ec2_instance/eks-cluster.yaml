@@ -4,29 +4,26 @@ metadata:
   project: defaultproject
 spec:
   blueprint: default
-  cloudprovider: Utkarsh-AWS
+  cloudprovider: automation-aws-creds-auto-user
   type: eks
 ---
 apiVersion: rafay.io/v1alpha5
 kind: ClusterConfig
 metadata:
   name: infra-test-1
-  region: us-west-2
+  region: us-west-1
   version: "1.19"
 nodeGroups:
 - amiFamily: AmazonLinux2
   desiredCapacity: 2
   iam:
     withAddonPolicies:
-      albIngress: true
       autoScaler: true
-      efs: true
-      externalDNS: true
       imageBuilder: true
   instanceType: t3.xlarge
   maxSize: 2
   minSize: 2
-  name: ng-50ee924d
+  name: ng-0cf24acc
   volumeSize: 80
   volumeType: gp3
 vpc:
